@@ -133,11 +133,12 @@ table {
 html,
 body {
   height: 100%;
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
 .page {
   display: flex;
+  background-color: #AEAFAF;
 }
 .pictureAndContact {
   width: 25%;
@@ -164,6 +165,7 @@ body {
   align-items: center;
   background-color: #232323;
   color: white;
+  font-size: 18px;
 }
 .pictureAndContact .contact h2 {
   font-size: 40px;
@@ -178,7 +180,7 @@ body {
   border-top: 2px solid white;
 }
 .pictureAndContact .contact .address {
-  padding: 0 10% 10%;
+  padding: 0 5% 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -197,17 +199,53 @@ body {
 }
 .pictureAndContact .contact .website {
   padding: 10%;
-  margin-bottom: 50%;
+  margin-bottom: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.pictureAndContact .contact a {
+  text-decoration: none;
+  color: white;
+}
 .mainBody {
   width: 100%;
   margin: 5%;
+  font-size: 18px;
+}
+.mainBody h2 {
+  font-size: 30px;
 }
 .mainBody .nameSpace h1 {
-  font-size: 88px;
+  font-size: 50px;
   padding-bottom: 5%;
   border-bottom: 2px solid black;
+  text-align: center;
+}
+.mainBody .intro {
+  padding: 4%;
+}
+.mainBody .projects {
+  padding: 4%;
+}
+.mainBody .projects ul {
+  list-style-type: circle;
+  padding-top: 2%;
+  border-top: 2px solid black;
+}
+.mainBody .skills {
+  padding: 4%;
+}
+.mainBody .skills ul {
+  list-style-type: circle;
+  padding-top: 2%;
+  border-top: 2px solid black;
+}
+.mainBody .workHistory {
+  padding: 4%;
+}
+.mainBody .workHistory ul {
+  list-style-type: circle;
+  padding-top: 2%;
+  border-top: 2px solid black;
 }

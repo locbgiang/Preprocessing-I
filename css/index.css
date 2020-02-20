@@ -1,1 +1,213 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+.page {
+  display: flex;
+}
+.pictureAndContact {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+.pictureAndContact h2 {
+  font-size: 40px;
+  margin-bottom: 10%;
+}
+.pictureAndContact .face img {
+  width: 200px;
+  height: 200px;
+  margin: 10% 0 10%;
+}
+.pictureAndContact .contact {
+  width: 100%;
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #232323;
+  color: white;
+}
+.pictureAndContact .contact h2 {
+  font-size: 40px;
+  margin-top: 18%;
+  margin-bottom: 10%;
+}
+.pictureAndContact .contact .phone {
+  padding: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid white;
+}
+.pictureAndContact .contact .address {
+  padding: 0 10% 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pictureAndContact .contact .email {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pictureAndContact .contact .github {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pictureAndContact .contact .website {
+  padding: 10%;
+  margin-bottom: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainBody {
+  width: 100%;
+  margin: 5%;
+}
+.mainBody .nameSpace h1 {
+  font-size: 88px;
+  padding-bottom: 5%;
+  border-bottom: 2px solid black;
+}

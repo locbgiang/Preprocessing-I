@@ -54,6 +54,86 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	width: 70%;
+	margin: 0 auto;
+}
+.page{
+	display: flex;
+}
+.pictureAndContact{
+	width:25%;
+	height:100%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	h2{
+		font-size:40px;
+		margin-bottom:10%;
+	}
+	.face img{
+		width:200px;
+		height:200px;
+		margin:10% 0 10%; 
+	}
+	.contact{
+		width:100%;
+		padding-top:10%;
+		display:flex;
+        flex-direction: column;
+		align-items: center;
+		background-color: #232323;
+		color:white;
+		h2{
+			font-size:40px;
+			margin-top:18%;
+			margin-bottom:10%;
+		}
+		.phone{
+			padding:20%;
+			display:flex;
+        	flex-direction: column;
+			align-items: center;
+			border-top: 2px solid white;
+		}
+		.address{
+			//padding-top:;
+			padding:0 10% 10%;
+			display:flex;
+        	flex-direction: column;
+			align-items: center;
+		}
+		.email{
+			padding:10%;
+			display:flex;
+        	flex-direction: column;
+			align-items: center;
+		}
+		.github{
+			padding:10%;
+			display:flex;
+        	flex-direction: column;
+			align-items: center;
+		}
+		.website{
+			padding:10%;
+			margin-bottom:50%;
+			display:flex;
+        	flex-direction: column;
+			align-items: center;
+		}
+	}//end of contact
+}
+.mainBody{
+	width:100%;
+	margin:5%;
+	.nameSpace{
+		h1{
+			font-size: 88px;
+			padding-bottom:5%;
+			border-bottom: 2px solid black;
+		}
+	}
 }
 

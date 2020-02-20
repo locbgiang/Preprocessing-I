@@ -3,6 +3,12 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Squada+One&display=swap');
+@body-color:#AEAFAF;
+@2nd-color:#232323;
+@main-font:'Playfair Display', serif;
+@title-font: 'Squada One', cursive;
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -57,10 +63,22 @@ html, body {
 	height: 100%;
 	width: 60%;
 	margin: 0 auto;
+	font-size:62.5%;
+	@media(max-width:500px){
+		width:100%;
+	}
 }
 .page{
 	display: flex;
-	background-color:#AEAFAF;
+	background-color:@body-color;
+	font-family: @main-font;
+	h1, h2{
+		font-family: @title-font;
+	}
+	@media(max-width:500px){
+		display:flex;
+		flex-direction: column;
+	}
 }
 .pictureAndContact{
 	width:25%;
@@ -69,14 +87,26 @@ html, body {
 	flex-direction: column;
 	align-items: center;
 	background-color: white;
+	@media(max-width:500px){
+		display:flex;
+		flex-direction: row;
+		width:100%;
+		height:10%;
+	}
 	h2{
-		font-size:40px;
+		font-size:4rem;
 		margin-bottom:10%;
+		@media(max-width:500px){
+			display:none;
+		}
 	}
 	.face img{
 		width:200px;
 		height:200px;
 		margin:10% 0 10%; 
+		@media(max-width:500px){
+			display:none;
+		}
 	}
 	.contact{
 		width:100%;
@@ -84,11 +114,10 @@ html, body {
 		display:flex;
         flex-direction: column;
 		align-items: center;
-		background-color: #232323;
+		background-color: @2nd-color;
 		color:white;
-		font-size: 18px;
+		font-size: 1.8rem;
 		h2{
-			font-size:40px;
 			margin-top:18%;
 			margin-bottom:10%;
 		}
@@ -98,24 +127,37 @@ html, body {
         	flex-direction: column;
 			align-items: center;
 			border-top: 2px solid white;
+			@media(max-width:500px){
+				padding: 0%;
+				border:0;
+			}
 		}
 		.address{
 			padding:0 5% 10%;
 			display:flex;
         	flex-direction: column;
 			align-items: center;
+			@media(max-width:500px){
+				padding: 0%;
+			}
 		}
 		.email{
 			padding:10%;
 			display:flex;
         	flex-direction: column;
 			align-items: center;
+			@media(max-width:500px){
+				padding: 0%;
+			}
 		}
 		.github{
 			padding:10%;
 			display:flex;
         	flex-direction: column;
 			align-items: center;
+			@media(max-width:500px){
+				padding: 0%;
+			}
 		}
 		.website{
 			padding:10%;
@@ -123,23 +165,34 @@ html, body {
 			display:flex;
         	flex-direction: column;
 			align-items: center;
+			@media(max-width:500px){
+				padding: 0%;
+				margin:0%;
+			}
 		}
 		a{
 			text-decoration: none;
 			color:white;
+		}
+		@media(max-width:500px){
+			height:10%;
+			margin:0;
+			padding:4%;
+			display:flex;
+			flex-direction: column;
 		}
 	}//end of contact
 }
 .mainBody{
 	width:100%;
 	margin:5%;
-	font-size:18px;
+	font-size:1.8rem;
 	h2{
-		font-size: 30px;
+		font-size: 3.0rem;
 	}
 	.nameSpace{
 		h1{
-			font-size: 50px;
+			font-size: 5.0rem;
 			padding-bottom:5%;
 			border-bottom: 2px solid black;
 			text-align:center;
@@ -173,4 +226,3 @@ html, body {
 		}
 	}
 }
-
